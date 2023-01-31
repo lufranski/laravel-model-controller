@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     public function home(){
+        $data = [
 
-        return view('pages.home');
+            'name' => 'Puppo'
+        ];
+
+        return view('pages.home', $data);
     }
 }
